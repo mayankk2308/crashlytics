@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Library Count View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LibraryCountViewController" customModule="Crashlytics" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main" translatesAutoresizingMaskIntoConstraints="NO" id="UzO-co-CTb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Run!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Icj-pf-8cl">
+                                <rect key="frame" x="111" y="384" width="154.5" height="43"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Libraries Loaded Previously" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFs-Ba-UZn">
+                                <rect key="frame" x="84.5" y="427" width="207" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="Oam-Th-lnh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Icj-pf-8cl" firstAttribute="centerX" secondItem="mFs-Ba-UZn" secondAttribute="centerX" id="1em-JP-Pjm"/>
+                            <constraint firstItem="UzO-co-CTb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5Me-gr-eGc"/>
+                            <constraint firstItem="UzO-co-CTb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="92t-y5-aWf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UzO-co-CTb" secondAttribute="bottom" id="BpG-3G-aSw"/>
+                            <constraint firstItem="Icj-pf-8cl" firstAttribute="centerX" secondItem="UzO-co-CTb" secondAttribute="centerX" id="JRT-1t-3S0"/>
+                            <constraint firstAttribute="trailing" secondItem="UzO-co-CTb" secondAttribute="trailing" id="NW7-de-XuN"/>
+                            <constraint firstItem="Icj-pf-8cl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="72" id="uCo-8R-eZm"/>
+                            <constraint firstItem="mFs-Ba-UZn" firstAttribute="top" secondItem="Icj-pf-8cl" secondAttribute="bottom" id="xUA-En-ZCm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="libraryCountLabel" destination="Icj-pf-8cl" id="TJH-ia-N1V"/>
+                        <outlet property="loadedLibraryLabel" destination="mFs-Ba-UZn" id="XFh-HS-FKQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Main" width="360" height="640"/>
+    </resources>
+</document>
